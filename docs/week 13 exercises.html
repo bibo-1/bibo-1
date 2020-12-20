@@ -16,22 +16,22 @@
 			overflow: hidden;
 			}
 
-			d > span {
+			ul.d > span {
 
 			transition: all 0.3s;
 			}
 	
-			d:hover > span{
+			ul.d:hover > span{
 			opacity: 0;
 			transform: translate(0px,40px);
 			}
-			d::after{
+			ul.d:after{
 			content: attr(data-text);
 			position: absolute;
 			transition: all 0.5s;   
 
 			}
-			d:hover::after{
+			ul.d:hover::after{
 			opacity: 1;
 			transform: translate(0, 0);
 			}
