@@ -8,24 +8,37 @@
   				list-style-image: url('images/marker.png');
 			}
 
-			ul.d {
-				color: rgba(255,255,255,1);
-				transition: all 0.5s;
-				position: relative;
-				border: 1px solid rgba(255,255,255,0.5);
-				overflow: hidden;
-				}
-			
-				d>span {
+			ul.d{
+			color: rgba(255,255,255,1);
+			transition: all 0.5s;	
+			position: relative;
+			border: 1px solid rgba(255,255,255,0.5);
+			overflow: hidden;
+			}
 
-				transition: all 0.3s;
-				}
-  			d:hover > span{
-				opacity: 0;}
+			d > span {
 
-		table.e{ 
+			transition: all 0.3s;
+			}
+	
+			d:hover > span{
+			opacity: 0;
+			transform: translate(0px,40px);
+			}
+			d::after{
+			content: attr(data-text);
+			position: absolute;
+			transition: all 0.5s;   
+
+			}
+			d:hover::after{
+			opacity: 1;
+			transform: translate(0, 0);
+			}
+
+			table.e{ 
   		style="border:3px #FFD382 dashed;" cellpadding="10" border='1'>
- 		 }
+ 			 }
 
 		table.f{ border-collapse: collapse; }
 		tr.f{ border: none; }
