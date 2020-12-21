@@ -13,27 +13,11 @@
 			transition: all 0.5s;	
 			position: relative;
 			border: 1px solid rgba(255,255,255,0.5);
-			overflow: hidden;
 			}
 
-			ul.d > span {
-
-			transition: all 0.3s;
-			}
-	
-			ul.d:hover > span{
+			ul.d:hover{
 			opacity: 0;
-			transform: translate(0px,40px);
-			}
-			ul.d:after{
-			content: attr(data-text);
-			position: absolute;
-			transition: all 0.5s;   
-
-			}
-			ul.d:hover::after{
-			opacity: 1;
-			transform: translate(0, 0);
+			transform: translate(0px,40px);background-color: green
 			}
 
 			table.e{ 
@@ -48,8 +32,8 @@
   				}
 	
 			table.g{ border-collapse: collapse; }
-  			tr.g{ border: none; }
- 			td.g{
+  			table.g{ border: none; }
+ 			table.g{
  		   	border-right: solid 1px #f00; 
     			border-left: solid 1px #f00;
  			 }
@@ -59,7 +43,7 @@
  			border-collapse: collapse;
  	 		width: 100%;
  			}
-			th.h, td.h {
+			th.h, td.h{
  			text-align: left;
  			padding: 8px;
 		 	 }
