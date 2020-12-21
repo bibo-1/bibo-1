@@ -16,12 +16,12 @@
 			}
 
 			ul.d:hover{
-			opacity: 0;
 			transform: translate(0px,40px);background-color: green
 			}
 
-			table.e{ 
-  			style="border:3px #FFD382 dashed;" cellpadding="10" border='1'>
+			table.e{border-collapse: collapse;}
+			table.e, th.e, td.e { border: 3px solid black;}
+  			table.e{style="border:3px #FFD382 dashed;" cellpadding="1" border="1">
  			 }
 
 			table.f{ border-collapse: collapse; }
@@ -31,11 +31,11 @@
     			border-left: solid 1px #f00;
   				}
 	
-			table.g{ border-collapse: collapse; }
-  			table.g{ border: none; }
+			table.g, td.g, th.g { border: 1px solid #ddd;text-align: left;}
+  			table.g{ border-collapse: collapse;}
  			table.g{
- 		   	border-right: solid 1px #f00; 
-    			border-left: solid 1px #f00;
+ 		   	width: solid 1px #f00; 
+    			margin: solid 1px #f00;
  			 }
 			 th.g, td.g { padding: 15px;}
   
@@ -89,15 +89,15 @@
 			</ul>
 		<hr/>
 			<ul class="c">
-  		<li>go1</li>
-  		<li>go2</li>
-  		<li>go3</li>
+  				<li>go1</li>
+  				<li>go2</li>
+  				<li>go3</li>
 			</ul>
 		<hr/>
 			<ul class="d">
-  		<li>go1</li>
-  		<li>go2</li>
-  		<li>go3</li>
+  				<li>go1</li>
+  				<li>go2</li>
+  				<li>go3</li>
 			</ul>
 		<hr/>
 			<table class="e">
